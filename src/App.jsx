@@ -1,5 +1,4 @@
-// src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; // Use Link from react-router-dom
 import Home from './pages/Home';
 import About from './pages/About';
 import Education from './pages/Education';
@@ -11,14 +10,14 @@ function App() {
   return (
     <Router>
       <div>
-        
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/Education">Education</a></li>
-            <li><a href="/Hobbies">Hobbies</a></li>
-            <li><a href="/Contact">Contact</a></li> {/* Link to the Contact page */}
+            {/* Use Link instead of <a> for routing */}
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/Education">Education</Link></li>
+            <li><Link to="/Hobbies">Hobbies</Link></li>
+            <li><Link to="/Contact">Contact</Link></li> {/* Link to the Contact page */}
           </ul>
         </nav>
 
