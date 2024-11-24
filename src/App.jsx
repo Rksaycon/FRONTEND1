@@ -15,7 +15,7 @@ function App() {
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/About">About</a></li>
             <li><a href="/education">Education</a></li>
             <li><a href="/hobbies">Hobbies</a></li>
             <li><a href="/contact">Contact</a></li> {/* Link to the Contact page */}
@@ -24,7 +24,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/About" element={<About />} />
           <Route path="/education" element={<Education />} />
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/contact" element={<Contact />} /> {/* Add Contact route */}
