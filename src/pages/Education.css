@@ -1,0 +1,36 @@
+.education-container .toggle-button {
+    background-color: #ea3f3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.5s ease;
+  }
+  
+  .education-container .toggle-button.blink {
+    animation: rgbBlink 2s infinite;
+  }
+  
+  .education-container .toggle-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Keyframes for RGB blinking effect */
+  @keyframes rgbBlink {
+    0% {
+      background-color: red;
+    }
+    33% {
+      background-color: green;
+    }
+    66% {
+      background-color: blue;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+Set background color for the entire page
+body {
+  background-color: #5e5959; /* Light gray */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Styling for the navbar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: rgb(158, 150, 150);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #f0a500;
+}
+/* index.css - Global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: lightblue; /* Your desired background color */
+  color: #333; /* Text color */
+}
