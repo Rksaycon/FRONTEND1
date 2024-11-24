@@ -16,18 +16,18 @@ function App() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/About">About</a></li>
-            <li><a href="/education">Education</a></li>
-            <li><a href="/hobbies">Hobbies</a></li>
-            <li><a href="/contact">Contact</a></li> {/* Link to the Contact page */}
+            <li><a href="/Education">Education</a></li>
+            <li><a href="/Hobbies">Hobbies</a></li>
+            <li><a href="/Contact">Contact</a></li> {/* Link to the Contact page */}
           </ul>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/hobbies" element={<Hobbies />} />
-          <Route path="/contact" element={<Contact />} /> {/* Add Contact route */}
+          <Route path="/Education" element={<Education />} />
+          <Route path="/Hobbies" element={<Hobbies />} />
+          <Route path="/Contact" element={<Contact />} /> {/* Add Contact route */}
         </Routes>
       </div>
     </Router>
