@@ -40,7 +40,7 @@ const About = () => {
             Feel free to reach out if you have any questions or would like to collaborate on a project!
           </p>
           <p>Also, you can ask me anything but within my knowledge range 😊</p>
-          <h1>😎</h1>
+          <h1>❤️</h1>
         </div>
       )}
 
