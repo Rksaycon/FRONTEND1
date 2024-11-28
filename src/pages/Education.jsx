@@ -49,7 +49,7 @@ const Education = () => {
         </div>
         <div className="image-section">
           <img
-            src="./src/assets/dog3.png" // Replace with your image path
+            src="./src/assets/dog3.jpg" // Replace with your image path
             alt="Learning in progress"
             className="education-image"
           />
