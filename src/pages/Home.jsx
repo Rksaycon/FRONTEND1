@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";  // Import the Link component
 import './Home.css';
+import DogProfile from "../assets/dog1.jpg";  // Import the image properly from the 'assets' folder
 
 function Home() {
   return (
@@ -22,7 +23,7 @@ function Home() {
       {/* About Section (Image) */}
       <div className="about-me">
         <img
-          src="/assets/dog1.jpg"  // Adjusted the path to the public folder
+          src={DogProfile}  // Use the imported image here
           alt="Ken Saycon's Profile"
           className="profile-pic"
         />
