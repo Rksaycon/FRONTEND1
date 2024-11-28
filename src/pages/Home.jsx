@@ -16,13 +16,13 @@ function Home() {
 
           {/* Contact Me button navigating to Contact page */}
           <Link to="/Contact" className="btn secondary-btn">Contact Me</Link>
-        </div>.
-      </div>.
+        </div>
+      </div>
 
       {/* About Section (Image) */}
       <div className="about-me">
         <img
-          src="./src/assets/dog1.png"
+          src="/dog1.png"  // Adjusted the path to the public folder
           alt="Ken Saycon's Profile"
           className="profile-pic"
         />
