@@ -21,9 +21,9 @@
     margin: 0 0 20px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(to right, #61605d, #ffda22);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #61605d, #ffda22); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make the text transparent so the gradient shows */
   }
   
   .hero p {
@@ -87,6 +87,7 @@
     object-fit: cover; /* Ensures the image is cropped correctly */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adds a professional shadow */
   }
+  
   body {
     background: linear-gradient(135deg, #e0f7fa, #fff8e1); /* Light blue to soft yellow gradient */
     color: #444; /* Dark gray text */
