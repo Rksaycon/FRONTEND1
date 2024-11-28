@@ -1,61 +1,68 @@
-// src/pages/About.jsx
 import React, { useState } from "react";
-import myImage from '../assets/dog.jpg'; // Import image
+import myImage from "../assets/dog.jpg"; // Import image
+import "./About.css"; // Custom styles for the About page
 
 const About = () => {
-  // State to track whether the additional information is visible
   const [isInfoVisible, setIsInfoVisible] = useState(false);
-  const [isImageVisible, setIsImageVisible] = useState(false); // State for image visibility
+  const [isImageVisible, setIsImageVisible] = useState(false);
 
-  // Toggle visibility of additional information
-  const toggleInfo = () => {
-    setIsInfoVisible(!isInfoVisible);
-  };
-
-  // Toggle visibility of the image
-  const toggleImage = () => {
-    setIsImageVisible(!isImageVisible);
-  };
+  const toggleInfo = () => setIsInfoVisible(!isInfoVisible);
+  const toggleImage = () => setIsImageVisible(!isImageVisible);
 
   return (
-    <div className="about-container">
-      <h1>About Me</h1>
-      <p>
-        WELCOME! Thanks well I'm not an expert; I usually rely on AI, but I understand how the code works, a little bit.
-      </p>
+    <div className="about-page">
+      <header className="about-header">
+        <h1>About Me</h1>
+        <p>
+          Hi! I'm <strong>Ken Saycon</strong>, a 2nd-year CS student passionate about exploring 
+          technology and learning something new every day. Here's a bit more about me!
+        </p>
+      </header>
 
-      {/* Button with text based on visibility state */}
-      <button onClick={toggleInfo} className="toggle-button">
-        {isInfoVisible ? "Hide Info" : "Click for More Info"}
-      </button>
+      <section className="about-content">
+        {/* Profile Section */}
+        <div className="profile-section">
+          <div className="profile-info">
+            <h2>Hello, eberywan! 👋</h2>
+            <p>
+              I'm a tech student i like making DIY projects including electronics and other diy stuff the biggest project i made is a faraday mini generator also a solar set-up.
+            </p>
+            <button onClick={toggleInfo} className="btn primary-btn">
+              {isInfoVisible ? "Show Less" : "Read More"}
+            </button>
+          </div>
 
-      {/* Conditionally render additional information */}
-      {isInfoVisible && (
-        <div className="additional-info">
-          <p>
-            I am a 2nd-year CS student. And well, we all know we don't know what will happen soon,
-            so just enjoying it.
-          </p>
-          <p>
-            Feel free to reach out if you have any questions or would like to collaborate on a project!
-          </p>
-          <p>Also, you can ask me anything but within my knowledge range 😊</p>
-          <h1>❤️</h1>
+          {/* Profile Image */}
+          <div className="profile-image-container">
+            <img
+              src={myImage}
+              alt="Ken Saycon"
+              className={`profile-image ${isImageVisible ? "visible" : ""}`}
+            />
+            <button onClick={toggleImage} className="btn secondary-btn">
+              {isImageVisible ? "Hide Image" : "Show Image"}
+            </button>
+          </div>
         </div>
-      )}
 
-      {/* Button to toggle image visibility */}
-      <button onClick={toggleImage} className="image-button">
-        {isImageVisible ? "Hide Image" : "Click for Image"}
-      </button>
+        {/* Additional Information */}
+        {isInfoVisible && (
+          <div className="additional-info">
+            <h3>Some Fun Facts About Me:</h3>
+            <ul>
+              <li>📚 I’m a big fan of AI and i always rely on AI because im learning through AI</li>
+              <li>💻 I love building creative projects and exploring new technologies.</li>
+              <li>🎯 My goal: Keep learning, keep growing, and contribute to meaningful projects.</li>
+            </ul>
+          </div>
+        )}
+      </section>
 
-      {/* Conditionally render the image */}
-      {isImageVisible && (
-        <div className="image-container">
-    
-          <img src={myImage} alt="click" className="chill" />
-        </div>
-      )}
+      <footer className="about-footer">
+        <p>
+          Want to collaborate or chat? Feel free to reach out anytime! 
+        </p> Just click the contacts!
+      </footer>
     </div>
   );
 };

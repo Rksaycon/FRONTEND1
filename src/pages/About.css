@@ -1,0 +1,154 @@
+/* About Page Styles */
+.about-page {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #ffffff, #f4f4f9);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .about-header {
+    background: linear-gradient(to right, #f0a500, #cf8e05);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  /* Content Section */
+  .about-content {
+    padding: 20px;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .profile-info {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .profile-info h2 {
+    font-size: 2rem;
+    color: #f0a500;
+    margin-bottom: 15px;
+  }
+  
+  .profile-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .profile-image-container {
+    text-align: center;
+  }
+  
+  .profile-image {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.9s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .profile-image.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.9s ease;
+  }
+  
+  .primary-btn {
+    background-color: #f0a500;
+    color: #fff;
+  }
+  
+  .primary-btn:hover {
+    background-color: #cf8e05;
+    transform: scale(1.1);
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    border: 2px solid #f0a500;
+    color: #f0a500;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #f0a500;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  /* Additional Information */
+  .additional-info {
+    margin-top: 20px;
+    text-align: left;
+    background: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .additional-info h3 {
+    font-size: 1.5rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+  }
+  
+  .additional-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .additional-info li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Footer Section */
+  .about-footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0a500;
+    color: #3a0d0d;
+    border-radius: 10px;
+  }
+  
+  .about-footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  

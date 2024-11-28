@@ -1,61 +1,60 @@
 // src/pages/Education.jsx
 import React, { useState, useEffect } from "react";
-import './Education.css';  // Import the CSS file for the Education page
+import "./Education.css"; // Import the CSS file for the Education page
 
 const Education = () => {
-  // State to track whether the additional education info is visible
   const [isInfoVisible, setIsInfoVisible] = useState(false);
-
-  // State to track button animation visibility
   const [isBlinking, setIsBlinking] = useState(true);
 
-  // Toggle visibility of additional information
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsBlinking(false);
+    }, 3000); // Stop blinking after 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const toggleInfo = () => {
     setIsInfoVisible(!isInfoVisible);
   };
 
-  useEffect(() => {
-    // Automatically stop the blinking after 3 seconds
-    const timer = setTimeout(() => {
-      setIsBlinking(false);
-    }, 3000); // Adjust the time to stop the blinking
-
-    return () => clearTimeout(timer); // Clean up the timer on unmount
-  }, []);
-
   return (
     <div className="education-container">
-      <h1>Education</h1>
-
-      {/* Main Education Information */}
-      <p>
-        I am currently pursuing a degree in Computer Science at NCF, Where im learning how to add rgb on button lols
-      </p>
-
-      {/* Button with blinking effect */}
-      <button
-        onClick={toggleInfo}
-        className={`toggle-button ${isBlinking ? "blink" : ""}`}
-      >
-        {isInfoVisible ? "Hide Details" : "Click for More Details"}
-      </button>
-
-      {/* Conditionally render additional education information */}
-      {isInfoVisible && (
-        <div className="additional-info">
-          <h3>Degrees & Courses:</h3>
-          <ul>
-            <li>BS in Computer Science - NCF 2023 - FUTURE</li>
-            <li>Intro to Programming (C++) SATIRE ONLY</li>
-            <li>Data Structures and Algorithms 😎</li>
-            <li>Language i know (HTML, CSS, JavaScript, tagcolish (tagalog,eng,bicol) )</li>
-            <li>also i like ice cream yummy ice cream gooods</li>
-          </ul>
+      <div className="education-content">
+        <div className="text-section">
+          <h1>Education</h1>
           <p>
-            In addition to my degree, I use CHATGPT 😎😎
+            Currently, I am pursuing a Bachelor’s degree in Computer Science at NCF.
+            Coding is my passion, and I enjoy learning new technologies and experimenting
+            with innovative ideas.
           </p>
+          <button
+            onClick={toggleInfo}
+            className={`toggle-button ${isBlinking ? "blink" : ""}`}
+          >
+            {isInfoVisible ? "Hide Details" : "Click for More Details"}
+          </button>
+          {isInfoVisible && (
+            <div className="additional-info">
+              <h3>My Journey So Far:</h3>
+              <ul>
+                <li>BS in Computer Science - NCF (2023 - Future)</li>
+                <li>Key Courses: Data Structures, Programming Fundamentals</li>
+                <li>Languages: HTML, CSS, JavaScript, and more!</li>
+                <li>Skills: Problem-solving, teamwork, and adaptability</li>
+              </ul>
+              <p>Fun fact: GPT NAMBAWAN! 🍦</p>
+            </div>
+          )}
         </div>
-      )}
+        <div className="image-section">
+          <img
+            src="./src/assets/dog3.png" // Replace with your image path
+            alt="Learning in progress"
+            className="education-image"
+          />
+        </div>
+      </div>
     </div>
   );
 };

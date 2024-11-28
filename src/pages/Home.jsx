@@ -1,13 +1,34 @@
+import { Link } from "react-router-dom";  // Import the Link component
+import './Home.css';
+
 function Home() {
-    return (
-      <div>
-        <h1>WELCOME TO MY WEBSITE ❤️❤️ 😎
-        </h1>
-        <p>This is the home page. Click on "Hobbies" to learn more about my hobbies!</p>
-        <h2></h2> ALSO CLICK THE OTHER TO KNOW ME BETTER 
+  return (
+    <div className="home">
+      {/* Hero Section (Text) */}
+      <div className="hero">
+        <h1>Welcome, I am Ken, a Comscie student of NCF</h1>
+        <p>
+          A chill guy learning how to code, AI is my best friend and also my great teacher..
+        </p>
+        <div className="hero-buttons">
+          {/* Learn More button navigating to About page */}
+          <Link to="/About" className="btn primary-btn">Learn More</Link>
+
+          {/* Contact Me button navigating to Contact page */}
+          <Link to="/Contact" className="btn secondary-btn">Contact Me</Link>
+        </div>.
+      </div>.
+
+      {/* About Section (Image) */}
+      <div className="about-me">
+        <img
+          src="./src/assets/dog1.png"
+          alt="Ken Saycon's Profile"
+          className="profile-pic"
+        />
       </div>
-    );
-  }
-  
-  export default Home;
-  
+    </div>
+  );
+}
+
+export default Home;

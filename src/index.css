@@ -1,23 +1,25 @@
-Set background color for the entire page
-body {
-  background-color: #5e5959; /* Light gray */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Navbar styles */
+nav {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between name and links */
+  align-items: center; /* Center content vertically */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  padding: 10px 20px;
+  color: rgba(26, 130, 204, 0.744);
 }
 
-/* Optional: Styling for the navbar */
-nav {
-  background-color: #333;
-  padding: 10px;
+nav .brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f0a500; /* Highlight color for the name */
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 15px;
+  display: flex; /* Align links horizontally */
+  gap: 20px; /* Space between links */
 }
 
 nav li {
@@ -25,18 +27,12 @@ nav li {
 }
 
 nav a {
-  color: rgb(158, 150, 150);
+  color: rgb(200, 200, 200); /* Link text color */
   text-decoration: none;
   font-size: 16px;
+  transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
 nav a:hover {
-  color: #f0a500;
-}
-/* index.css - Global styles */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: lightblue; /* Your desired background color */
-  color: #333; /* Text color */
+  color: #f0a500; /* Highlight color on hover */
 }

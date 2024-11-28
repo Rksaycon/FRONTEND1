@@ -1,0 +1,98 @@
+/* Home Section */
+.home {
+    display: flex; /* Aligns items horizontally */
+    justify-content: space-between; /* Spaces out the text and image */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width/height */
+  }
+  
+  /* Hero Section (Text Area) */
+  .hero {
+    flex: 1; /* Occupies 50% of the space */
+    text-align: left; /* Aligns text to the left */
+    padding-right: 20px; /* Adds space between text and image */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #61605d, #ffda22);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #4c5158;
+    margin-bottom: 40px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .primary-btn {
+    background-color: #f0a500;
+    color: #1f1c2c;
+    box-shadow: 0 4px 15px rgba(240, 165, 0, 0.4);
+  }
+  
+  .primary-btn:hover {
+    background-color: #cf8e05;
+    transform: scale(1.1);
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    border: 2px solid #f0a500;
+    color: #f0a500;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #f0a500;
+    color: #1f1c2c;
+    transform: scale(1.1);
+  }
+  
+  /* About Section (Image Area) */
+  .about-me {
+    flex: 1; /* Occupies 50% of the space */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers content vertically */
+  }
+  
+  .profile-pic {
+    width: 300px; /* Adjusts the image size */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is cropped correctly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adds a professional shadow */
+  }
+  body {
+    background: linear-gradient(135deg, #e0f7fa, #fff8e1); /* Light blue to soft yellow gradient */
+    color: #444; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
