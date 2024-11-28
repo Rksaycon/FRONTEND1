@@ -22,7 +22,7 @@ function Home() {
       {/* About Section (Image) */}
       <div className="about-me">
         <img
-          src="/assets/dog1.png"  // Adjusted the path to the public folder
+          src="/assets/dog1.jpg"  // Adjusted the path to the public folder
           alt="Ken Saycon's Profile"
           className="profile-pic"
         />
